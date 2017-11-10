@@ -15,13 +15,18 @@ import ast
 token="370210083:AAE5kDTVO5csSAx0jPXqk8ICX9omTPa4HeQ"
 url='https://cachetest-172511.appspot.com/'
 
-# 444
+# 111
+ac
+aa
+av
+
 
 app = Flask(__name__)
 bot = telepot.Bot(token=token)
 ch=chathelper.ChatHelper(bot=bot) #**
 
 db=dbhelper.HandleStatus()
+
 
 
 @app.route('/')
@@ -34,7 +39,6 @@ def hello_world():
 
         #logging.error(len(a.keys()))
         return 'Hello World!'
-
 
 @app.route('/{}'.format(token),methods=['POST'])
 def updates():
